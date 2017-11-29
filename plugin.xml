@@ -5,7 +5,7 @@
     <description>Cordova MQTT Paho Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,mqtt,paho</keywords>
-    <dependency id="com.feedhenry.eventemitter" url="https://github.com/mclhrn/cordova-eventemitter-public" version=">=0.1.0"/>
+    <dependency id="com.feedhenry.eventemitter" url="https://github.com/johnbx/cordova-eventemitter-public.git" version=">=0.2.0"/>
     <dependency id="cordova-plugin-x-toast" version=">=2.4.2"/>
     <js-module src="www/mqtt.js" name="mqtt">
         <clobbers target="window.plugins.mqtt"/>
@@ -13,15 +13,6 @@
     <js-module src="www/paho-mqttws31.js" name="paho_mqttws31">
         <clobbers target="window.plugins.paho_mqttws31"/>
     </js-module>
-    <!--platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="Device">
-                <param name="ios-package" value="CDVDevice"/>
-            </feature>
-        </config-file>
-        <header-file src="src/ios/CDVDevice.h" />
-        <source-file src="src/ios/CDVDevice.m" />
-    </platform-->
     <engines>
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
